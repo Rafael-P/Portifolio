@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto:wght@300&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.topo{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+
+.topo nav{
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.topo nav a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 18px 50px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.topo nav ul{
+    width: 600px;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.topo nav a:hover{
+    text-decoration: underline;
+    background-color: white;
+    color: black;
+}
+
+.banner{
+    width: 100%;
+    height: 700px;
+    background-color: rgba(112, 104, 104, 0.233);
+}
+
+.alinhamento-banner{
+    display: flex;
+    justify-content: center;
+}
+
+.banner-txt{
+    /*background-color: rgb(128, 101, 101);*/
+    width: 705px;
+    height: 700px;    
+    text-align: center;
+}
+
+.banner-txt h2{
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    margin-top: 150px;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner-txt h1{
+    font-size: 70px;
+    color: black;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner-txt p{
+    font-size: 20px;
+    color: black;
+    margin-bottom: 140px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner-txt a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 40px;
+    padding: 20px 60px;
+    border: none;
+    background-color: rgb(53, 50, 50);
+}
+
+.sobre{
+    width: 100%;
+    height: 650px;
+    background-color: white;
+}
+
+.sobre h2{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+/*.tag{
+    
+}*/
+
+.txt-sobre{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 130px;
+    font-size: 25px;
+    width: 700px;
+    height: 750px;
+    margin-left: 200px;
+    /*background-color: teal;*/
+}
+
+.botao{
+    position: absolute;
+    top: 1400px;
+    left: 200px;
+    font-size: 40px;
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.sobre a{
+    padding: 20px 60px;
+    color: white;
+    background-color: rgb(53, 50, 50);
+    text-decoration: none;
+}
+
+.meus-trabalhos{
+    width: 100%;
+    height: 700px;
+    background-color: rgba(112, 104, 104, 0.233);
+}
+
+.meus-trabalhos h2{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    padding: 70px 30px 40px 30px;
+    margin-top: 70px;
+}
+
+.img-trabalhos{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.rodape{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.rodape h2{
+    font-family: 'Fira Sans', sans-serif;
+    margin-left: 150px;
+}
+
+.rodape p{
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: uppercase;
+    margin-left: 1000px;
+    word-spacing: 20px;
+}
+
+.barra-skills{
+    width: 500px;
+    height: 500px;
+    /*background-color: wheat;*/
+    position: relative;
+    top: -900px;
+    left: 1000px;
+}
+
+.container{
+    width: 600px;
+    margin: 150px auto 0;
+    padding: 40px;
+    /*background-color: tomato;*/
+}
+
+li{
+    position: relative;
+    list-style: none;
+    margin: 50px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 25px;
+}
+
+li::before{
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-color: rgba(65, 65, 65, 0.76);
+    border-radius: 1000px;
+}
+
+li::after{
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 15px;
+    background-color: rgb(7, 7, 7);
+    border-radius: 1000px;
+    animation-duration: .7s; 
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+li.html::after{
+    animation-name: html;
+}
+
+@keyframes html {
+    to{
+        width: 90%;
+    }
+}
+
+li.design::after{
+    animation-name: design;
+}
+
+@keyframes design {
+    to{
+        width: 80%;
+    }
+}
+
+li.wordp::after{
+    animation-name: wordpress;
+}
+
+@keyframes wordpress {
+    to{
+        width: 90%;
+    }
+}
